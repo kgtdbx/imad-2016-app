@@ -8,8 +8,8 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/profile1', function(req, res) {
-    res.send('Profile will get responded here');
+app.get('/developer-profile', function(req, res) {
+    res.send('Manish Chauhan Male 21');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
