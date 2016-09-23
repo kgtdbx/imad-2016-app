@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/developer-profile', function(req, res) {
-    res.send('(TOO SEXY..PIC NOT FAILED TO UPLOAD)Manish Chauhan Male 21');
+    res.send('(TOO SEXY..PIC FAILED TO UPLOAD)Manish Chauhan Male 21');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
