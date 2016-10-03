@@ -12,7 +12,7 @@ app.get('/developer-profile', function(req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'developer-profile.html'));
     
 });
-app.get('/developer-profile 2', function(req, res) {
+app.get('/developer-profile2', function(req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'developer-profile2.html'));
     
 });
