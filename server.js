@@ -61,7 +61,7 @@ app.get('/developer-profile', function(req, res) {
 //app.get('/developer-profile2', function(req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'developer-profile2.html'));
   app.get('/developer-profile2', function(req, res) {
-  res.send(createtemplate(developer2));
+  res.send(createtemplate(Developer2));
     
 });
 app.get('/developer-profile3', function(req, res) {
