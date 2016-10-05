@@ -4,15 +4,24 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var Developer2={
+var profiles={
+ 'Developer-profile2':{
     title:'developer-profile 2',
-    heading:'Devepoler-profile 2',
+    heading:'Developer-profile 2',
     date:'oct 6, 2016',
     content:
     `<p>THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.</p>
          <p>THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.</p>
          <p>THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.</p>`
+},
+
+'Devloper-profile3':{
+     title:'developer-profile 3',
+    heading:'Developer-profile 3',
+    date:'oct 12, 2016',
+    content:
+    `<p>THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS S A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.</p>`
+}
 };
 function createtemplate(data)
 {
@@ -60,14 +69,15 @@ app.get('/developer-profile', function(req, res) {
 });
 //app.get('/developer-profile2', function(req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'developer-profile2.html'));
-  app.get('/developer-profile2', function(req, res) {
-  res.send(createtemplate(Developer2));
+  app.get('/:developerName', function(req, res) {
+      var developerName=req.params.developerName
+  res.send(createtemplate(profiles[developerName]));
     
 });
-app.get('/developer-profile3', function(req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'developer-profile3.html'));
+/*app.get('/developer-profile3', function(req, res) {
+  //  res.sendFile(path.join(__dirname, 'ui', 'developer-profile3.html'));
     
-});
+});*/
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
