@@ -21,7 +21,7 @@ var profiles={
     date:'oct 12, 2016',
     content:
     `<p>THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS S A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.</p>`
-}
+    }
 };
 function createtemplate(data)
 {
@@ -54,12 +54,6 @@ function createtemplate(data)
 return htmltemplate;
 
 }
-
-
-
-
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
