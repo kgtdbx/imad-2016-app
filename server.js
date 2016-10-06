@@ -64,7 +64,7 @@ app.get('/developer-profile', function(req, res) {
 //app.get('/developer-profile2', function(req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'developer-profile2.html'));
   app.get('/:developerName', function(req, res) {
-      var developerName=req.params.developerName
+      var DeveloperName=req.params.developerName
   res.send(createtemplate(profiles[DeveloperName]));
     
 });
