@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var profiles={
-    'p_two' : {
+    'd-profile2' : {
       title :'D2',
       heading :'Developer2',
       date : 'oct 17',
@@ -13,7 +13,7 @@ var profiles={
                      <p>THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.</p>
                      <p>THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.THIS IS A VERY BAD BOY.</p>`
                      },
- 'p_three':{
+ 'd_profile3':{
      title :'D3',
       heading :'Developer3',
       date : 'oct 17',
