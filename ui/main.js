@@ -1,3 +1,3 @@
 console.log('Loaded!');
 console.log('MY WORK IS ALMOST DONE');
-alert('Hi');
+var element= document.getElementById('mainindex');
