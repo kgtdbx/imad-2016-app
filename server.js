@@ -53,7 +53,7 @@ function createtemp(data){
 
 
 
-app.get('/:dName', function(req, res) {
+app.get('/:pName', function(req, res) {
     var pName=req.params.pName;
 res.send(createtemp(profiles[pName]));
 });
