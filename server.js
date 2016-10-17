@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var profiles={
-    'd-profile2' : {
+    'd_profile2' : {
       title :'D2',
       heading :'Developer2',
       date : 'oct 17',
