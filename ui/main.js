@@ -12,6 +12,9 @@ function normalImg(x) {
     x.style.height = "32px";
     x.style.width = "32px";
 }
-img.onclick= bigImg(img);
+img.onclick= function()
+{
+    img.bigImg(img);
+}
 //img.onmouseout= normalImg(img);
                         
