@@ -11,6 +11,17 @@
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
+        <script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
         <div class="center">
             <img id='madi' onmouseover="bigImg(this)" src="/ui/madi.png" class="img-medium"/>
         </div>
