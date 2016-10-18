@@ -5,6 +5,6 @@ console.log('MY WORK IS ALMOST DONE');
 var img=document.getElementById('madi');
 img.onclick= function()
                         {
-                          img.style.marginleft= '100px';  
+                          img.style.marginLeft= '100px';  
                         };
 
