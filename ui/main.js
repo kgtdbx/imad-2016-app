@@ -3,4 +3,3 @@ console.log('MY WORK IS ALMOST DONE');
 var element= document.getElementById('main-text');
 element.innerHTML='NEW VALUE';
 
-
