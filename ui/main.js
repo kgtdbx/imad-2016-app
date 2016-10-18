@@ -3,7 +3,7 @@ console.log('MY WORK IS ALMOST DONE');
 //var element= document.getElementById('main-text');
 //element.innerHTML='NEW VALUE';
 var img=document.getElementById('madi');
-img.onclick=function()
+img.onmouseover=function()
 {
     img.style.marginLeft='100px';
 };
