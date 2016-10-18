@@ -4,8 +4,8 @@ console.log('MY WORK IS ALMOST DONE');
 //element.innerHTML='NEW VALUE';
 var img=document.getElementById('madi');
 function bigImg(x) {
-    x.style.height = "64px";
-    x.style.width = "64px";
+    x.style.height = "500px";
+    x.style.width = "500px";
 }
 
 function normalImg(x) {
