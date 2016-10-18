@@ -6,6 +6,7 @@ body {
 .top{
     background-color: darkorchid;
     text-align:center;
+    padding-top
 }
 
 .center {
@@ -24,10 +25,10 @@ body {
     height: 200px;
 }
 
- .deco
+.deco
         {    max-width:800px;
              text-align: center;
              margin: 0 auto;
-             color:blue;
+             background-color:white;
              font-family:sans-serif;
         }
