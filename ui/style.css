@@ -1,12 +1,9 @@
 body {
     font-family: sans-serif;
-    
+    background-color: darkorchid;
     margin-top: 75px;
 }
-.top
-{
-    background-color:darkorchid;
-}
+
 .center {
     text-align: center;
 }
