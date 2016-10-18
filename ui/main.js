@@ -9,5 +9,5 @@ img.onmouseover=function()
 };
 img.onmouseout=function()
 {
-    img.style.marginRight='100px';
+    img.style.marginRight='10px';
 };
