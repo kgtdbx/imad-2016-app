@@ -7,7 +7,7 @@ img.onmouseover=function()
 {
     img.style.marginLeft='100px';
 };
-img.onmouseout=function()
+function moveLeft()
 {
-    img.style.marginRight='10px';
-};
+    img.style.marginRight='100px';
+}
