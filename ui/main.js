@@ -15,6 +15,6 @@ function normalImg(x) {
 img.onclick= function()
 {
     img.bigImg(img);
-}
+};
 //img.onmouseout= normalImg(img);
                         
