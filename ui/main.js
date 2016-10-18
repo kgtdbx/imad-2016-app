@@ -12,6 +12,6 @@ function normalImg(x) {
     x.style.height = "32px";
     x.style.width = "32px";
 }
-//img.onmouseover= bigImg(img);
-//img.onmouseout= normalImg(img);
+img.onmouseover= bigImg(img);
+img.onmouseout= normalImg(img);
                         
