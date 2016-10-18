@@ -7,7 +7,3 @@ img.onmouseover=function()
 {
     img.style.marginLeft='100px';
 };
-function moveLeft()
-{
-    img.style.marginRight='100px';
-}
