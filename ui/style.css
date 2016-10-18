@@ -21,8 +21,9 @@ body {
 }
 
  .deco
-        { max-width:800px;
-        margin: 0 auto;
-        color:blue;
-        font-family:sans-serif;
+        {    max-width:800px;
+             text-align: center;
+             margin: 0 auto;
+             color:blue;
+             font-family:sans-serif;
         }
