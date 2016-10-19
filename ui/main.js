@@ -31,5 +31,11 @@ submit.onclick=function(){
 // Make a request to the Server and send the names
 
 // capture the list of names and render the name in HTML
-
+ var names=['name1' , 'name2' , 'name3'];
+ var list = '';
+for(var i;i<names.length;i++){
+    list+='<li>'  + names[i] + '</li>';
+    var ul=document.getElementById('namelist');
+    ul.innerHTML=list;
+}
 };
