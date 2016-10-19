@@ -22,3 +22,14 @@ request.onreadystatechange = function(){
   request.open('GET','http://manish-utm.imad.hasura-app.io/counter',true);
   request.send(null);
 };
+
+// submit name 
+var inputName=document.getElementById('name');
+var name=nameInput.value;
+var submit=document.getElementById('submit');
+submit.onclick=function(){
+// Make a request to the Server and send the names
+
+// capture the list of names and render the name in HTML
+
+};
