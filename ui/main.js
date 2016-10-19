@@ -25,7 +25,7 @@ request.onreadystatechange = function(){
 
 // submit name 
 var inputName=document.getElementById('name');
-var name=nameInput.value;
+var name=inputName.value;
 var submit=document.getElementById('submit');
 submit.onclick=function(){
 // Make a request to the Server and send the names
