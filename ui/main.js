@@ -3,7 +3,7 @@ var counter=0;
 button.onclick=function(){
     
   //create request
-  var request = new XMLHttprequest();
+ // var request = new XMLHttprequest();
   // casture response and save it 
   
   // render the varible in html
