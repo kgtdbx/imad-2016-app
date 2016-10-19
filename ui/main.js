@@ -1,17 +1,11 @@
-console.log('Loaded!');
-console.log('MY WORK IS ALMOST DONE');
-//var element= document.getElementById('main-text');
-//element.innerHTML='NEW VALUE';
-var marginLeft=0;
-var img=document.getElementById('madi');
-function moveRight () {
- marginLeft=marginLeft+5;
- 
- img.style.marginLeft= marginLeft + 'px';
- 
-}
-
-img.onclick=function()
-{
-    var interval=setInterval(moveRight,10);
+var button=document.getElementBId('counter');
+button.onclick=function(){
+  //create request
+  var request = new XMLHttprequest();
+  // casture response and save it 
+  
+  // render the varible in html
+  counter=counter+1;
+  var span=document.getElementById('count');
+  span.innerHTML=counter.toString();
 };
