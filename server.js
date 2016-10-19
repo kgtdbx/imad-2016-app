@@ -56,6 +56,7 @@ app.get('/counter', function(req, res) {
     res.send(counter.toString());
 });
 
+
 app.get('/:pName', function(req, res) {
     var pName=req.params.pName;
 res.send(createtemp(profiles[pName]));
