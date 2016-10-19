@@ -7,7 +7,7 @@ button.onclick=function(){
   // casture response and save it 
   
   // render the varible in html
-  counter=counter+1;
+     counter=counter+1;
   var span=document.getElementById('count');
   span.innerHTML=counter.toString();
 };
