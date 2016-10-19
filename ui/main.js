@@ -1,13 +1,24 @@
 var button=document.getElementById('counter');
-var counter=0;
+//var counter=0;
 button.onclick=function(){
     
   //create request
- // var request = new XMLHttprequest();
-  // casture response and save it 
+ var request = new XMLHttprequest();
+  // capture response and save it 
+  request.onreadystatechange = function(){
+      if(request.readystate===XMLHttpRequest.done){
+          if(request.status===200){
+              var counter=request.responseText;
+              var span=document.getElementById('count');
+              span.innerHTML=counter.toString();
+              
+          }
+         
+      }
+      
+  } ;
   
   // render the varible in html
-     counter=counter+1;
-  var span=document.getElementById('count');
-  span.innerHTML=counter.toString();
+  request.open('GET','http//manish-utm.imad.hasura-app.io/counter',true);
+  request.send(null);
 };
