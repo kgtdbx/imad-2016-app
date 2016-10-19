@@ -19,6 +19,6 @@ button.onclick=function(){
   } ;
   
   // render the varible in html
-  request.open('GET','http//manish-utm.imad.hasura-app.io/counter',true);
+  request.open('GET','http://manish-utm.imad.hasura-app.io/counter',true);
   request.send(null);
 };
